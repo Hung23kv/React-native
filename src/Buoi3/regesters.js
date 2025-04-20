@@ -52,7 +52,7 @@ const Login = () => {
 
             <Button
             mode="contained"
-            onPress={() => console.log("Login pressed")}
+            //onPress={() => console.log("Login pressed")}
             style={styles.SignupButton}
             contentStyle={styles.SignupButtonContent}
             labelStyle={styles.SignupButtonText}

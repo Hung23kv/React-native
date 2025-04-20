@@ -3,7 +3,7 @@ import { Image, StyleSheet, View, TouchableOpacity, ScrollView, KeyboardAvoiding
 import { HelperText, Text, TextInput, Button } from "react-native-paper"
 
 const Login = () => {
-  const [email, setEmail] = useState("huutv@dmu.edu.vn")
+  const [email, setEmail] = useState("hung@tdmu.edu.vn")
   const [password, setPassword] = useState("123")
   const [showPassword, setShowPassword] = useState(false)
 
@@ -67,7 +67,7 @@ const Login = () => {
 
         <Button
           mode="contained"
-          onPress={() => console.log("Login pressed")}
+          //onPress={() => console.log("Login pressed")}
           style={styles.loginButton}
           contentStyle={styles.loginButtonContent}
           labelStyle={styles.loginButtonText}

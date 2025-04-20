@@ -20,7 +20,7 @@ const Login = () => {
             </View>
             <Button
             mode="contained"
-            onPress={() => console.log("Login pressed")}
+            //onPress={() => console.log("Login pressed")}
             style={styles.sendReset}
             contentStyle={styles.sendResetContent}
             labelStyle={styles.sendResetText}
