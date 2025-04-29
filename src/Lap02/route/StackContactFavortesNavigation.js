@@ -6,8 +6,8 @@ const Stack = createStackNavigator();
 const StackContactFavoritesNavigation = () => {
     return(
         <Stack.Navigator>
-            <Stack.Screen name="Favorites" component={Favorites} />
-            <Stack.Screen name="ContactDetail" component={Profile} />
+            <Stack.Screen name="My Favorites" component={Favorites} />
+            <Stack.Screen name="Profile" component={Profile} />
         </Stack.Navigator>
     )
 }

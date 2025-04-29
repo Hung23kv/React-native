@@ -7,7 +7,7 @@ const StackContactNavigation = () => {
     return(
         <Stack.Navigator>
             <Stack.Screen name="Contacts" component={Contacts} />
-            <Stack.Screen name="ContactDetail" component={Profile} />
+            <Stack.Screen name="Profile" component={Profile} />
         </Stack.Navigator>
     )
 }

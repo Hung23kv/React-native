@@ -15,9 +15,9 @@ const User = ({navigation}) => {
                 </View>
             </View>
             <View style={{flex:1,backgroundColor:'#33CCFF',justifyContent:'center',alignItems:'center'}}>
-                <Avatar.Image source={require('../../../assets/avatar.jpg')} size={150}/>
-                <Text style={{margin:15,color:'#ffffff',fontSize:24,fontWeight: 'bold'}}>Trịnh Quốc Hùng</Text>
-                <Text style={{margin:10,color:'#ffffff',fontSize:24,fontWeight: 'bold'}}>2124802010377</Text>
+                <Avatar.Image source={require('../../../assets/avatar.jpg')} size={150} style = {{marginBottom:20}} />
+                <Text style={styles.headerText}>Trịnh Quốc Hùng</Text>
+                <Text style={styles.headerText}>2124802010377</Text>
             </View>
         </View>
     )

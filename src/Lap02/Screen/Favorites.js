@@ -18,7 +18,7 @@ const Favorites = ({navigation}) =>{
 
     const renderItem = ({ item }) => {
         return (
-            <TouchableOpacity onPress={() => navigation.navigate("ContactDetail", { contact: item })}>
+            <TouchableOpacity onPress={() => navigation.navigate("Profile", { contact: item })}>
                 <Avatar.Image source={{uri:item.picture}}
                 style={{margin:30}}
                 size={150}
