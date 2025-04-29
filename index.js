@@ -1,9 +1,11 @@
 /**
  * @format
  */
-
+import 'react-native-reanimated';
 import {AppRegistry} from 'react-native';
-import App from './src/Lap01/CalculatorProject';
+import App from './App';
+// import App from './src/Lap02/Screen/Profile';
 import {name as appName} from './app.json';
 
 AppRegistry.registerComponent(appName, () => App);
+

@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Image, StyleSheet, View, TouchableOpacity, ScrollView, KeyboardAvoidingView, Platform } from "react-native"
 import { HelperText, Text, TextInput, Button } from "react-native-paper"
 
-const Login = () => {
+const Login = ({ navigation }) => {
   const [email, setEmail] = useState("hung@tdmu.edu.vn")
   const [password, setPassword] = useState("123")
   const [showPassword, setShowPassword] = useState(false)
@@ -75,11 +75,15 @@ const Login = () => {
           Login
         </Button>
 
-        <TouchableOpacity style={styles.createAccountButton}>
+        <TouchableOpacity style={styles.createAccountButton}
+          onPress={() => navigation.navigate("Register")}
+        >
           <Text style={styles.createAccountText}>Create a new account</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.forgotPasswordButton}>
+        <TouchableOpacity style={styles.forgotPasswordButton}
+          onPress={() => navigation.navigate("ForgotPassword")}
+        >
           <Text style={styles.forgotPasswordText}>Forgot Password</Text>
         </TouchableOpacity>
 

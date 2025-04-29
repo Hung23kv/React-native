@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import {  StyleSheet, View, TouchableOpacity, ScrollView, KeyboardAvoidingView, Platform } from "react-native"
 import { Text, TextInput, Button } from "react-native-paper"
 
-const Login = () => {
+const Login = ({ navigation }) => {
     const [showPassword, setShowPassword] = useState(false)
     const [confshowPassword, setConfShowPassword] = useState(false)
     return (
@@ -60,7 +60,9 @@ const Login = () => {
             Signup
             </Button>
 
-            <TouchableOpacity style={styles.HaveAccountButton}>
+            <TouchableOpacity style={styles.HaveAccountButton}
+              onPress={() => navigation.navigate("Login")}
+            >
             <Text style={styles.HaveAccountText}>Have already an account ?</Text>
             </TouchableOpacity>
 

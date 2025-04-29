@@ -2,7 +2,7 @@ import React from "react";
 import {  StyleSheet, View, TouchableOpacity, ScrollView, KeyboardAvoidingView, Platform } from "react-native"
 import { Text, TextInput, Button } from "react-native-paper"
 
-const Login = () => {
+const Login = ({ navigation }) => {
     return (
         <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : "height"} style={styles.container}>
         <ScrollView contentContainerStyle={styles.scrollContainer}>
@@ -28,16 +28,18 @@ const Login = () => {
                 Send Reset Email
             </Button>
 
-            <TouchableOpacity style={styles.backLoginButton}>
+            <TouchableOpacity style={styles.backLoginButton}
+              onPress={() => navigation.navigate("Login")}
+            >
             <Text style={styles.backLoginButtonText}>Go back to login</Text>
             </TouchableOpacity>
 
         </ScrollView>
         </KeyboardAvoidingView>
     )
-}
+};
 
-export default Login
+export default Login;
 
 const styles = StyleSheet.create({
   container: {
