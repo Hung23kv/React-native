@@ -1,14 +1,13 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import { NavigationContainer } from "@react-navigation/native";
-import CustomDrawerBar from "./DrawerNavigator"
+import CustomDrawerBar from "./CustomDrawerBar"
 import Home from "./Home";
 import Profile from "./Profile";
-import setting from "./Set";
+import Logout from "./Logout";
+import Detail from "./Detail";
 
 const Drawer = createDrawerNavigator();
 const MyDrawer = () => {
-    return (
-        <NavigationContainer>
+    return (  
             <Drawer.Navigator
                 drawerContent={(props) => 
                     <CustomDrawerBar {...props} />
@@ -16,9 +15,12 @@ const MyDrawer = () => {
             >
                 <Drawer.Screen name="Home" component={Home} />
                 <Drawer.Screen name="Profile" component={Profile} />
-                <Drawer.Screen name="Setting" component={setting} />
+                <Drawer.Screen name="Logout" component={Logout} />
+                <Drawer.Screen name="Detail" component={Detail} 
+                    options={{ drawerItemStyle: { display: "none" } }}
+                />
             </Drawer.Navigator>
-        </NavigationContainer>
+        
     );
 }
 

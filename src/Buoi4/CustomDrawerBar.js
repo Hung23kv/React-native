@@ -7,7 +7,7 @@ const CustomDrawerBar = ({navigation}) => {
         <Drawer.Section title="Admin">
             <Drawer.Item
                 label="Home"
-                icon={"home-outline"}
+                icon={"home"}
                 active= {active=== "Home"}
                 onPress={() =>{ 
                     navigation.navigate("Home")
@@ -24,7 +24,9 @@ const CustomDrawerBar = ({navigation}) => {
             <Drawer.Item
                 label="Logout"
                 icon="logout"
-                onPress={() => navigation.navigate("Set")}
+                active= {active=== "Logout"}
+                onPress={() => {navigation.navigate("Logout") 
+                    setActive("Logout")}}
             />
         </Drawer.Section>
     );

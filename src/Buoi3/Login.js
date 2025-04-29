@@ -76,13 +76,13 @@ const Login = ({ navigation }) => {
         </Button>
 
         <TouchableOpacity style={styles.createAccountButton}
-          onPress={() => navigation.navigate("Register")}
+          onPress={() => navigation.navigate("Regesters")}
         >
           <Text style={styles.createAccountText}>Create a new account</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.forgotPasswordButton}
-          onPress={() => navigation.navigate("ForgotPassword")}
+          onPress={() => navigation.navigate("ForgotPassWord")}
         >
           <Text style={styles.forgotPasswordText}>Forgot Password</Text>
         </TouchableOpacity>

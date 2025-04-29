@@ -33,7 +33,6 @@ const Login = ({ navigation }) => {
             >
             <Text style={styles.backLoginButtonText}>Go back to login</Text>
             </TouchableOpacity>
-
         </ScrollView>
         </KeyboardAvoidingView>
     )
