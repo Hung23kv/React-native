@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "414908023507",
+    "project_id": "react-native-ccd3b",
+    "storage_bucket": "react-native-ccd3b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414908023507:android:4fffc0d4d7c2248e554a26",
+        "android_client_info": {
+          "package_name": "com.demo1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG8pi5IkJsnrHyyXNchQxggpJoBfRy5bM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
