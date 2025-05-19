@@ -5,7 +5,8 @@ import { PaperProvider } from "react-native-paper";
 // import BottomTabNavigation from "./src/Lap02/route/BottomTabNavigation";
 // import Drawernavigation from "./src/Lap02/route/DrawerNavigation";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import { MyContextControllerProvider } from "./src/Lap03_04_05/store";
+// import Tabs from "./src/Lap06/routers/Tab";
+// import { MyContextControllerProvider } from "./src/Lap03_04_05/store";
 // import DrawerNavigate from './src/Buoi6/Route/DrawerNavigate.js'
 import Route from "./src/Lap03_04_05/routers/Route";
 // import TodoScreens from "./src/Buoi5/TodoScreens"
@@ -16,7 +17,7 @@ const App = () => {
   return(
     <SafeAreaProvider>
       <PaperProvider>
-        <MyContextControllerProvider>
+        {/* <MyContextControllerProvider> */}
         <NavigationContainer>
           {/* <BottomTabNavigation /> */}
           {/* <Drawernavigation/> */}
@@ -25,7 +26,7 @@ const App = () => {
           <Route/>
           {/* <DrawerNavigate/> */}
         </NavigationContainer>
-        </MyContextControllerProvider>
+        {/* </MyContextControllerProvider> */}
       </PaperProvider>
     </SafeAreaProvider>
   );
